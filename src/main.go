@@ -2,9 +2,9 @@ package main
 
 import (
 	"fmt"
+	"io/ioutil"
 	"os"
-    "io/ioutil"
-    //"strings"
+	"strings"
 )
 
 func main() {
@@ -13,8 +13,13 @@ func main() {
 		fmt.Printf("USAGE: %s SCRIPT", os.Args[0])
 	}
 
-    content, err := ioutil.ReadFile(os.Args[1])
-    if err != nil { panic(err) }
+	content, err := ioutil.ReadFile(os.Args[1])
+	if err != nil {
+		panic(err)
+	}
 
-	fmt.Println(string(content))
+	actions := ParseScript(string(content))
+	for i := range actions {
+		fmt.Printf("%+v\r\n", actions[i])
+	}
 }
