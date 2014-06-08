@@ -1,5 +1,16 @@
 =Main
 +Carburatore
++Bonolis
 Carburatore: Ciao
-** Test test **
+Carburatore: Tutto bene?
+Bonolis: Dici a me?
+Carburatore: No a tua sorella
++TuaSorella
+TuaSorella: Sisi io sto bene
+Carburatore: Tutto apposto allora
+Bonolis: Vabeh io vado
+-Bonolis
+TuaSorella: Comunque sei sexy, facciamo casa mia
+** E vissero tutti felici e contenti **
 -Carburatore
+-TuaSorella

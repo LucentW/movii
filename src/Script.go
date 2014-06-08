@@ -89,12 +89,16 @@ func ParseScript(script string) []Action {
 	return actions
 }
 
-func CharacterList(actions []Action) []string {
+func CharacterList(actions []Action) ([]string, string) {
 	chars := make(map[string]bool)
+	master := ""
 
 	for _, v := range actions {
 		if v.Type == ACTION_JOIN || v.Type == ACTION_MASTER {
 			chars[v.Who] = true
+			if v.Type == ACTION_MASTER {
+				master = v.Who
+			}
 		}
 	}
 
@@ -104,5 +108,5 @@ func CharacterList(actions []Action) []string {
 		out[i] = k
 		i++
 	}
-	return out
+	return out, master
 }

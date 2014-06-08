@@ -985,7 +985,7 @@ Phoenix: ...I suppose that is a problem, yes.
 Judge: Court is adjourned for a brief recess!
 Judge: Mr. Gavin, I'll see you in my chambers during this recess.
 Kristoph: ...Certainly, Your Honor.
-Judge: Very well!  The trial will resume in twenty minutes!
+Judge: Very well!  The trial will resume in five minutes!
 PAUSE
 Judge: Court will now reconvene.
 Judge: Has our witness, Ms. Olga Orly, recovered?
