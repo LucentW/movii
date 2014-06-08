@@ -85,20 +85,20 @@ func play(actors map[string]*irc.Client, actions []Action, master string) {
 			actors[master].Send(irc.Message{
 				Command: "PRIVMSG",
 				Target:  CHANNEL,
-				Text:    string(1) + "ACTION ** Court is now in recess for 5 minutes **",
+				Text:    "\001ACTION ** Court is now in recess for 5 minutes **\001",
 			})
 			time.Sleep(time.Minute * 4)
 			actors[master].Send(irc.Message{
 				Command: "PRIVMSG",
 				Target:  CHANNEL,
-				Text:    string(1) + "ACTION ** Court will reconvene in a minute **",
+				Text:    "\001ACTION ** Court will reconvene in a minute **\001",
 			})
 			time.Sleep(time.Minute)
 		case ACTION_EVENT:
 			actors[master].Send(irc.Message{
 				Command: "PRIVMSG",
 				Target:  CHANNEL,
-				Text:    string(1) + "ACTION " + act.What,
+				Text:    "\001ACTION " + act.What + "\001",
 			})
 			time.Sleep(PAUSE / 2)
 		case ACTION_NULL:
