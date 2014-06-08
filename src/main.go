@@ -3,6 +3,8 @@ package main
 import (
 	"fmt"
 	"os"
+    "io/ioutil"
+    //"strings"
 )
 
 func main() {
@@ -10,6 +12,9 @@ func main() {
 	if len(os.Args) < 2 {
 		fmt.Printf("USAGE: %s SCRIPT", os.Args[0])
 	}
-	os.exis
-	fmt.Println(os.Args)
+
+    content, err := ioutil.ReadFile(os.Args[1])
+    if err != nil { panic(err) }
+
+	fmt.Println(string(content))
 }
