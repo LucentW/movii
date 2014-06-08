@@ -15,11 +15,11 @@ func Execute(actions []Action) {
 	for i := range chars {
 		conn := irc.IRC(chars[i], chars[i])
 		conn.UseTLS = false
-		conn.Connect("ugo.darkspirit.org:6667")
+		conn.Connect("localhost:6667")
+		conn.Join("#trials")
 		actors[chars[i]] = conn
 	}
 	actors[master].AddCallback("PRIVMSG", commands)
-	actors[master].Privmsg(COMMANDER, "READY")
 	actors[master].Loop()
 }
 
