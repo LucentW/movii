@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"io/ioutil"
 	"os"
-	"strings"
 )
 
 func main() {
@@ -18,8 +17,5 @@ func main() {
 		panic(err)
 	}
 
-	actions := ParseScript(string(content))
-	for i := range actions {
-		fmt.Printf("%+v\r\n", actions[i])
-	}
+	_ = ParseScript(string(content))
 }

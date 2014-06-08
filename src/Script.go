@@ -1,6 +1,7 @@
 package main
 
 import (
+    "fmt"
 	"strings"
 )
 
@@ -29,7 +30,7 @@ func ParseLine(line string) Action {
 	// Empty line - SKIP
 	if len(line) < 1 {
 		out.Type = ACTION_NULL
-		return
+		return out
 	}
 
 	// Character: Message - DIALOGUE
@@ -43,31 +44,47 @@ func ParseLine(line string) Action {
 	// =Character - JOIN MASTER
 	if line[0] == '=' {
 		out.Type = ACTION_MASTER
-		out.Who = lines[1:]
+		out.Who = line[1:]
+        return out
 	}
 
 	// +Character - JOIN
 	if line[0] == '+' {
 		out.Type = ACTION_JOIN
-		out.Who = lines[1:]
+		out.Who = line[1:]
+        return out
 	}
 
 	// -Character - LEAVE
 	if line[0] == '-' {
 		out.Type = ACTION_LEAVE
-		out.Who = lines[1:]
+		out.Who = line[1:]
+        return out
 	}
 
 	// PAUSE
 	if line == "PAUSE" {
 		out.Type = ACTION_PAUSE
+        return out
 	}
+
+    // ** EVENT **
+    if line[0] == '*' {
+        out.Type = ACTION_EVENT
+        out.What = line
+        return out
+    }
+
+    fmt.Println("Unparsable line: "+line)
+    out.Type = ACTION_NULL
+    return out
 }
 
 func ParseScript(script string) []Action {
-	lines := strings.Split(string(content), "\n")
-	actions = make([]Action, len(lines))
+	lines := strings.Split(string(script), "\n")
+    actions := make([]Action, len(lines))
 	for i := range actions {
 		actions[i] = ParseLine(lines[i])
 	}
+    return actions
 }
