@@ -2,10 +2,13 @@ package main
 
 import (
 	"./irc"
-	"fmt"
 )
 
-const COMMANDER = "Hamcha"
+const (
+	SERVER    = "localhost:6667"
+	COMMANDER = "Hamcha"
+	CHANNEL   = "#trials"
+)
 
 func Execute(actions []Action) {
 	// Get the character list
@@ -21,11 +24,12 @@ func Execute(actions []Action) {
 		sinfo.Nickname = chars[i]
 		sinfo.Altnick = chars[i] + "`"
 		sinfo.Realname = chars[i]
-		sinfo.Channels = []string{"#trials"}
+		sinfo.Channels = []string{}
+		sinfo.Perform = []string{}
 		conn.ServerInfo = sinfo
 		conn.Sid = chars[i]
 		conn.ServerName = "Actor"
-		err, ch := conn.Connect("localhost:6667")
+		err, ch := conn.Connect(SERVER)
 		if err != nil {
 			panic(err)
 		}
@@ -35,6 +39,21 @@ func Execute(actions []Action) {
 
 	for {
 		message := <-chans[master]
-		fmt.Printf("%v+\r\n", message)
+		if message.Message.Source.Nickname == COMMANDER {
+			if message.Message.Text == "play" {
+				go play(actors, actions)
+			}
+		}
+	}
+}
+
+func play(actors map[string]*irc.Client, actions []Action) {
+	for _, act := range actions {
+		if act.Type == ACTION_MASTER && act.Type == ACTION_JOIN {
+			actors[act.Who].Send(irc.Message{
+				Command: "JOIN",
+				Target:  CHANNEL,
+			})
+		}
 	}
 }

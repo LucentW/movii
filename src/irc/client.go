@@ -58,6 +58,12 @@ type Server struct {
 	Altnick  string
 	Realname string
 	Channels []string
+	Perform  []string
+}
+
+func (c *Client) Send(msg Message) {
+	raw := Prepare(msg)
+	fmt.Fprintf(c.Socket, raw)
 }
 
 func (c *Client) Connect(server string) (error, chan ClientMessage) {
@@ -129,39 +135,15 @@ func handle(c *Client, parts []string, text string, messages chan ClientMessage)
 
 	msg.Text = text
 
-	// If 376 (End of MOTD) then join all the channels
+	// If 376 (End of MOTD) then execute perform and join all the channels
 	if msg.Command == "376" {
 		fmt.Printf("[%s] Connected! joining channels.. \r\n", c.Sid)
+		for _, perf := range c.ServerInfo.Perform {
+			fmt.Fprintf(c.Socket, perf)
+		}
 		for _, name := range c.ServerInfo.Channels {
 			fmt.Fprintf(c.Socket, "JOIN %s\r\n", name)
 		}
-	}
-
-	// If 353 (NAMES list) then fill the User array for the given channel
-	if msg.Command == "353" {
-		msg.Command = "NAMES"
-		msg.Target = parts[4]
-		names := strings.Split(text, " ")
-		channel, ok := c.Channels[msg.Target]
-		if !ok {
-			return
-		}
-		channel.Users = make([]UserItem, len(names))
-		for i, nick := range names {
-			user, mode := SplitUname(nick)
-			channel.Users[i] = UserItem{User: user, Modes: mode}
-		}
-	}
-
-	// Have we joined somewhere?
-	if msg.Command == "JOIN" && msg.Source.Nickname == c.ServerInfo.Nickname {
-		if msg.Target == "" {
-			msg.Target = msg.Text
-		}
-		fmt.Fprintf(c.Socket, "NAMES %s\r\n", msg.Target)
-		channel := new(Channel)
-		channel.Name = msg.Target
-		c.Channels[msg.Target] = channel
 	}
 
 	// Pass it to the clients
