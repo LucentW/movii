@@ -2,6 +2,7 @@ package main
 
 import (
 	"./irc"
+	"fmt"
 	"time"
 )
 
@@ -45,6 +46,8 @@ func Execute(actions []Action) {
 			if message.Message.Text == "play" {
 				go play(actors, actions, master)
 			}
+		} else {
+			fmt.Println(message)
 		}
 	}
 }
@@ -76,7 +79,7 @@ func play(actors map[string]*irc.Client, actions []Action, master string) {
 				continue
 			}
 			if act.Who == lastPerson {
-				time.Sleep(PAUSE / 2)
+				time.Sleep(PAUSE - time.Second)
 			} else {
 				time.Sleep(PAUSE)
 			}
