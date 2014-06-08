@@ -17,5 +17,7 @@ func main() {
 		panic(err)
 	}
 
-	_ = ParseScript(string(content))
+	actions := ParseScript(string(content))
+
+	Execute(actions)
 }
