@@ -9,7 +9,7 @@ const (
 	SERVER    = "localhost:6667"
 	COMMANDER = "Hamcha"
 	CHANNEL   = "#trials"
-	PAUSE     = time.Second * 4
+	PAUSE     = time.Second * 3
 )
 
 func Execute(actions []Action) {
@@ -50,6 +50,7 @@ func Execute(actions []Action) {
 }
 
 func play(actors map[string]*irc.Client, actions []Action, master string) {
+	var lastPerson string
 	for _, act := range actions {
 		switch act.Type {
 		case ACTION_MASTER, ACTION_JOIN:
@@ -57,42 +58,47 @@ func play(actors map[string]*irc.Client, actions []Action, master string) {
 				Command: "JOIN",
 				Target:  CHANNEL,
 			})
-			time.Sleep(PAUSE / 2)
+			time.Sleep(PAUSE / 4)
 		case ACTION_LEAVE:
 			actors[act.Who].Send(irc.Message{
 				Command: "PART",
 				Target:  CHANNEL,
 				Text:    "Leaving..",
 			})
-			time.Sleep(PAUSE / 2)
+			time.Sleep(PAUSE / 4)
 		case ACTION_SAY:
 			actors[act.Who].Send(irc.Message{
 				Command: "PRIVMSG",
 				Target:  CHANNEL,
 				Text:    act.What,
 			})
-			if act.What[len(act.What)-3:] == "--" {
+			if act.What[len(act.What)-2:] == "--" {
 				continue
 			}
-			time.Sleep(PAUSE)
+			if act.Who == lastPerson {
+				time.Sleep(PAUSE / 2)
+			} else {
+				time.Sleep(PAUSE)
+			}
+			lastPerson = act.Who
 		case ACTION_PAUSE:
 			actors[master].Send(irc.Message{
 				Command: "PRIVMSG",
 				Target:  CHANNEL,
-				Text:    "** Court is now in recess for 5 minutes **",
+				Text:    string(1) + "ACTION ** Court is now in recess for 5 minutes **",
 			})
 			time.Sleep(time.Minute * 4)
 			actors[master].Send(irc.Message{
 				Command: "PRIVMSG",
 				Target:  CHANNEL,
-				Text:    "** Court will reconvene in a minute **",
+				Text:    string(1) + "ACTION ** Court will reconvene in a minute **",
 			})
 			time.Sleep(time.Minute)
 		case ACTION_EVENT:
 			actors[master].Send(irc.Message{
 				Command: "PRIVMSG",
 				Target:  CHANNEL,
-				Text:    act.What,
+				Text:    string(1) + "ACTION " + act.What,
 			})
 			time.Sleep(PAUSE / 2)
 		case ACTION_NULL:
