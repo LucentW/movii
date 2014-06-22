@@ -138,11 +138,9 @@ func handle(c *Client, parts []string, text string, messages chan ClientMessage)
 	// If 376 (End of MOTD) then execute perform and join all the channels
 	if msg.Command == "376" {
 		fmt.Printf("[%s] Connected! joining channels.. \r\n", c.Sid)
+		time.Sleep(time.Second*2)
 		for _, perf := range c.ServerInfo.Perform {
 			fmt.Fprintf(c.Socket, perf)
-		}
-		for _, name := range c.ServerInfo.Channels {
-			fmt.Fprintf(c.Socket, "JOIN %s\r\n", name)
 		}
 	}
 
