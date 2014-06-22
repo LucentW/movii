@@ -44,12 +44,6 @@ Payne: This is the weapon that took the victim's life.  A bottle of grape juice.
 Payne: Grape juice is apparently our defendant's drink of choice.
 Judge: The court accepts the deadly bottle as evidence.
 ** Deadly Bottle added to the Court Record. **
-Kristoph: Something to note, Jusice.
-Kristoph: All evidence is filed in the Court Record.
-Kristoph: Make a practice of checking it frequently.
-Apollo: The Court Record... Right! I've heard of that!
-Kristoph: Use the Court Record Button to look at the evidence so far.
-Kristoph: I'm confident in your ability to handle this.
 Judge: So, the victim was a customer at this restaurant.
 Judge: But just who was this, erm, "Shadi Smith" fellow?
 Payne: We believe he was a traveler, Your Honor.
@@ -88,11 +82,11 @@ Judge: You will testify to the court about the poker competition held the night 
 Phoenix: ...My pleasure.
 ** Witness Testimony **
 ** The Competition **
-Phoenix: I am a pianist by trade... yet I can hardly play at all.
-Phoenix: My real job is to take on interested customers over at the poker table.
-Phoenix: The room where we play and the competition in there are the club's main attractions.
-Phoenix: The rules are simple: we play a game of poker using two decks of cards.
-Phoenix: That's all it is... a game. And our customers are happy.
+Phoenix: >I am a pianist by trade... yet I can hardly play at all.
+Phoenix: >My real job is to take on interested customers over at the poker table.
+Phoenix: >The room where we play and the competition in there are the club's main attractions.
+Phoenix: >The rules are simple: we play a game of poker using two decks of cards.
+Phoenix: >That's all it is... a game. And our customers are happy.
 Judge: ...Hmm.
 Judge: A pianist who can't play piano?
 Payne: Better than a defense attorney who can't defend.
@@ -112,14 +106,14 @@ Kristoph: That is cross-examination. Learn it.  Know it.  Do it.
 Judge: The defense may begin the cross-examination.
 ** Cross-Examination **
 ** The Competition **
-Phoenix: I am a pianist by trade... yet I can hardly play at all.
+Phoenix: >I am a pianist by trade... yet I can hardly play at all.
 Apollo: *HOLD IT!*
 Apollo: You can hardly play...?
 Phoenix: Oh, I play sometimes.  When customers demand it.
 Phoenix: So I play them one song. That's usually all they want.
 Phoenix: The title of "pianist" is a mask ** a respectable face I wear for the world at large.
 Judge: Then why are you really at the Borscht Bowl Club?
-Phoenix: My real job is to take on interested customers over at the poker table.
+Phoenix: >My real job is to take on interested customers over at the poker table.
 Apollo: *HOLD IT!*
 Apollo: They pay you just to play poker?
 Phoenix: That would seem to be the case.  I am a professional, after all.
@@ -136,7 +130,7 @@ Phoenix: It's quite a draw.
 Phoenix: That is, I'm quite a draw.
 Apollo: Wait, you've never lost once? Not even one time!?
 Phoenix: As I said, I'm a professional.
-Phoenix: The room where we play and the competition in there are the club's main attractions.
+Phoenix: >The room where we play and the competition in there are the club's main attractions.
 Apollo: *HOLD IT!*
 Apollo: The room in the crime scene photo... is an attraction?
 Phoenix: It has quite a history, actually.
@@ -154,7 +148,7 @@ Phoenix: The room had a few other tricks to it...
 Phoenix: Though it was common knowledge to our regulars.
 Phoenix: At any rate, they come to play poker in a room steeped in history.
 Phoenix: Despite the dark past, it was all just good, clean fun.
-Phoenix: The rules are simple: we play a game of poker using two decks of cards.
+Phoenix: >The rules are simple: we play a game of poker using two decks of cards.
 Apollo: *HOLD IT!*
 Apollo: Two decks of cards?
 Phoenix: A simple measure to prevent cheating.
@@ -172,7 +166,7 @@ Judge: As I recall, in poker you make five-card "hands".
 Judge: I can see how it would be easy to cheat.
 Phoenix: Heh... Yes.  A game of "hands".
 Apollo: ...?
-Phoenix: That's all it is... a game. And our customers are happy.
+Phoenix: >That's all it is... a game. And our customers are happy.
 Apollo: *HOLD IT!*
 Apollo: So, you claim you weren't gambling?
 Phoenix: That's right.  It was simply a game.
@@ -328,11 +322,11 @@ Judge: Very well, Witness!
 Judge: You will testify to the court about that night's events!
 ** Witness Testimony **
 ** That Fateful Night **
-Olga: That night, customer asked me to deal cards for game.
-Olga: It was cold... Both players played with hats on, dah.
-Olga: The victim, he plays whole time with his hand on locket at his neck.
-Olga: Then, last hand is done! But something terrible has happened, dah!
-Olga: That man flew at victim, and is strangling him to death!
+Olga: >That night, customer asked me to deal cards for game.
+Olga: >It was cold... Both players played with hats on, dah.
+Olga: >The victim, he plays whole time with his hand on locket at his neck.
+Olga: >Then, last hand is done! But something terrible has happened, dah!
+Olga: >That man flew at victim, and is strangling him to death!
 Judge: Hmm...
 Judge: Incidentally, who won the game?
 Payne: Isn't it obvious? The winner was the victim... Mr. Smith!
@@ -359,7 +353,7 @@ Judge: ...it does seem that most of the chips are on the victim's side of the ta
 Judge: Very well.  The defense may cross-examine the witness.
 ** Cross-Examination **
 ** That Fateful Night **
-Olga: That night, customer asked me to deal cards for game.
+Olga: >That night, customer asked me to deal cards for game.
 Apollo: *HOLD IT!*
 Apollo: You were dealing cards... Do you do this often?
 Olga: Dah, I am doing this.
@@ -368,13 +362,13 @@ Olga: It is my work.
 Judge: It's good to hear of a place that hasn't forgotten the meaning of service!
 Olga: Welcome you to Borscht Bowl Club, where borscht is as warm as the waitresses!
 Apollo: Thank you for NOT handing out flyers during the cross- examination.
-Olga: It was cold... Both players played with hats on, dah.
+Olga: >It was cold... Both players played with hats on, dah.
 Apollo: *HOLD IT!*
 Apollo: It's already April.  How could it be cold?
 Olga: At Borscht Bowl Club we have pride on authentic rustic Russian restaurant theme.
 Olga: Outside it is city in Spring, but inside it is always as cold as Mother Russia!
 Olga: When it comes to hot borscht, cold is best seasoning, dah?
-Olga: The victim, he plays whole time with his hand on locket at his neck.
+Olga: >The victim, he plays whole time with his hand on locket at his neck.
 Apollo: *HOLD IT!*
 Apollo: His "locket"...?
 Olga: I believe it was good-luck charm, dah?
@@ -388,7 +382,7 @@ Judge: It was probably a pendant shaped like a rocket.  That's why she called it
 Apollo: No, a locket's a locket!  It doesn't matter what shape it is
 Kristoph: It's considered bad form to poke fun at the hard-of- hearing in our society.
 Payne: So, what happened next?
-Olga: Then, last hand is done! But something terrible has happened, dah!
+Olga: >Then, last hand is done! But something terrible has happened, dah!
 Apollo: *HOLD IT!*
 Apollo: Something terrible!?!?
 Olga: Eeeeeeeeeeeek!
@@ -396,7 +390,7 @@ Judge: The defense will refrain from needless shouting!
 Apollo: Er, sorry.
 Payne: Now, Ms. Orly, can you tell us what happened?
 Olga: Oh, I was so frightened! Dah, I trembled with fear!
-Olga: That man flew at victim, and is strangling him to death!
+Olga: >That man flew at victim, and is strangling him to death!
 Apollo: *HOLD IT!*
 Apollo: But the defendant would never do such a thing!
 Olga: Eeeeeeeek!
@@ -474,11 +468,11 @@ Judge: You will testify to the court about the game played between the victim an
 Olga: D-Dah...
 ** Witness Testimony **
 ** Serious Competition **
-Olga: The game began with 3,500 point in chips for each man.
-Olga: House chips come in two size: small and large.
-Olga: The one who was winning... dah, it was victim!
-Olga: For last hand, defendant play with all chips on table and lose.
-Olga: The moment loss was decided, defendant grabs bottle from table and...
+Olga: >The game began with 3,500 point in chips for each man.
+Olga: >House chips come in two size: small and large.
+Olga: >The one who was winning... dah, it was victim!
+Olga: >For last hand, defendant play with all chips on table and lose.
+Olga: >The moment loss was decided, defendant grabs bottle from table and...
 Judge: Indeed... Looking at this picture...
 Judge: It does seem to be a one-sided game.
 Payne: As the court knows, poker was the defendant's life!
@@ -488,14 +482,14 @@ Judge: "I done it in a fit of anger, Yer Honor, and now I regret what I done".
 Judge: ...A common tale, but true.
 ** Cross-Examination **
 ** Serious Competition **
-Olga: The game began with 3,500 point in chips for each man.
+Olga: >The game began with 3,500 point in chips for each man.
 Apollo: *HOLD IT!*
 Apollo: Are those the usual starting points?  Were any special rules used...?
 Olga: No, not special.  Usual game, usual rules.
 Judge: If each man began with 3,500 points, then the total would be...
 Judge: Um... Exactly six, no, 7,000 points!
 Kristoph: ...
-Olga: House chips come in two size: small and large.
+Olga: >House chips come in two size: small and large.
 Apollo: *HOLD IT!*
 Apollo: Are the chips in this photo all the chips that were used?
 Olga: Da... Dah!  Of course.
@@ -521,7 +515,7 @@ Apollo: Yes, I do think this deserves further scrutiny.
 Apollo: Add it to the testimony!
 Judge: Very well.  Witness, if you would be so kind?
 Olga: D-Dah, Your Honor.
-Olga: One kind of chip is worth 100 points, other kind is worth 1,000.  Two kinds in all.
+Olga: >One kind of chip is worth 100 points, other kind is worth 1,000.  Two kinds in all.
 Apollo: *HOLD IT!*
 Judge: ...Mr. Justice?
 Judge: Do the court a favor and think of what you want to say before raising your hand.
@@ -542,7 +536,7 @@ Apollo: Huh?  Who?  Me!?
 Kristoph: There's a clear contradiction in the information you have in your hands.
 Kristoph: It's a simple matter of calculation.  Go on, try it.
 Kristoph: We're not in kindergarten, after all.
-Olga: The one who was winning... dah, it was victim!
+Olga: >The one who was winning... dah, it was victim!
 Apollo: *HOLD IT!*
 Apollo: You're telling me that Mr. Wright, undefeated for seven whole years, was losing?
 Olga: Dah.  It must have been most unlucky day for him.
@@ -550,7 +544,7 @@ Olga: I am glad I did not take other picture of him.  It would break camera, cer
 Olga: The chips, they went always to victim's side of table.
 Payne: So you're telling us it was a one-sided game?
 Olga: Dah.  One-sided, and...
-Olga: For last hand, defendant play with all chips on table and lose.
+Olga: >For last hand, defendant play with all chips on table and lose.
 Apollo: *HOLD IT!*
 Apollo: "Last hand"?
 Olga: It was largest points of any hand.
@@ -562,7 +556,7 @@ Olga: One with highest number wins, so defendant loses.
 Payne: The victim, Mr. Smith, had a stronger hand than the defendant and crushed him.
 Payne: I believe that explains what occurred next.
 Olga: Once cards laid down on table, it happened...
-Olga: The moment loss was decided, defendant grabs bottle from table and...
+Olga: >The moment loss was decided, defendant grabs bottle from table and...
 Apollo: *HOLD IT!*
 Apollo: And...?  What happened next!?
 Olga: ...Even to think of it now, I shake and tremble, dah!
@@ -580,6 +574,7 @@ Payne: My witness saw the very moment of the crime!
 Judge: Hmm...
 Kristoph: Remember, your first goal is to gather information!
 Apollo: Yes, sir!
+Olga: >For last hand, defendant play with all chips on table and lose.
 Apollo: *OBJECTION!*
 Apollo: You're sure it was the victim who won?
 Apollo: Absolutely sure?
@@ -643,7 +638,7 @@ Payne: Yeeeaaaargh!
 Apollo: Now... Ms. Orly.
 Apollo: You must have known the true value of the chips.
 Apollo: Since you were there at the scene of the crime... weren't you?
-Orly: Ah... Eeeeeeeeeek!
+Olga: Ah... Eeeeeeeeeek!
 Judge: Order!  Order!!!
 Judge: It appears our defendant has lost his "motive".
 Judge: And Mr. Wright's supposed defeat... never happened.
@@ -667,11 +662,11 @@ Judge: Witness!  You will please testify to the court!
 Judge: Tell us about this cheating in the final hand!
 ** Witness Testimony **
 ** The Final Hand **
-Olga: The last hand... both men had "full house".
-Olga: There is four of each card in deck, from ace to king.
-Olga: If you look at both men's hands, cheat is more obvious!
-Olga: The next moment, game becomes argument, dah!  The defendant's trick was exposed!
-Olga: He took bottle in his hand... Poor Mr. Smith!
+Olga: >The last hand... both men had "full house".
+Olga: >There is four of each card in deck, from ace to king.
+Olga: >If you look at both men's hands, cheat is more obvious!
+Olga: >The next moment, game becomes argument, dah!  The defendant's trick was exposed!
+Olga: >He took bottle in his hand... Poor Mr. Smith!
 Apollo: Ms. Orly!
 Apollo: Why did you not tell the court about this from the very beginning!?
 Olga: ...
@@ -695,7 +690,7 @@ Payne: You cheat.
 Judge: Ahem.  The defense may cross-examine the witness.
 ** Cross-Examination **
 ** The Final Hand **
-Olga: The last hand... both men had "full house".
+Olga: >The last hand... both men had "full house".
 Apollo: *HOLD IT!*
 Apollo: Just how hard is it to make a full house, anyway?
 Olga: It is quite hard, dah.
@@ -705,7 +700,7 @@ Apollo: I guess that's right.
 Judge: Very difficult, to be sure.
 Judge: You can take my word as the "Poker Head of Courtroom No. 3"!
 Olga: Very difficult, dah.  But is not impossible.
-Olga: There is four of each card in deck, from ace to king.
+Olga: >There is four of each card in deck, from ace to king.
 Apollo: *HOLD IT!*
 Apollo: Four of each card, you say?
 Olga: Dah.  There is one spade, one diamond, one heart, and one club for each card.
@@ -718,7 +713,7 @@ Payne: That's why each deck has two jokers.
 Payne: They say the second joker stands for the leap year.
 Payne: Thus you have a perfect representation of the year... all in a deck of cards!
 Apollo: Huh, you don't say.
-Olga: If you look at both men's hands, cheat is more obvious!
+Olga: >If you look at both men's hands, cheat is more obvious!
 Apollo: *HOLD IT!*
 Apollo: How was it "clear"?
 Olga: Dah, well... the defendant...
@@ -730,7 +725,7 @@ Olga: ...and Mr. Wright's two.
 Payne: Obviously, cheating was afoot! Or perhaps I should say... a hand!
 Kristoph: Your Honor... perhaps this can be added to the testimony? Without Mr. Payne's joke.
 Judge: Very well.  The witness will add this detail to her testimony, please.
-Olga: Mr. Smith's hand has three aces, and Mr. Wright's two. ...It is five aces in all.
+Olga: >Mr. Smith's hand has three aces, and Mr. Wright's two. ...It is five aces in all.
 Apollo: *HOLD IT!*
 Apollo: A fifth ace...?
 Olga: Dah!  It should not exist, no?
@@ -744,7 +739,7 @@ Payne: Than forging evidence in a court of law!
 Apollo: Nnnk...!
 Kristoph: Now... Perhaps it's time for you to say something, Justice?
 Apollo: You bet!  I've no intention of staying quiet!  Not me!  No sir!
-Olga: The next moment, game becomes argument, dah!  The defendant's trick was exposed!
+Olga: >The next moment, game becomes argument, dah!  The defendant's trick was exposed!
 Apollo: *HOLD IT!*
 Apollo: Do you recall what the men were arguing about?
 Olga: Dah, I believe so...
@@ -758,7 +753,7 @@ Apollo: That seems to cast the shadow of doubt on Mr. Smith!
 Olga: Humiliation from losing even when cheating...
 Olga: That is what set fire to defendant's heart!
 Judge: So what did the flaming defendant do next?
-Olga: He took bottle in his hand... Poor Mr. Smith!
+Olga: >He took bottle in his hand... Poor Mr. Smith!
 Apollo: *HOLD IT!*
 Apollo: By bottle, are you referring to... this?
 Olga: ...Dah.  The defendant uses this bottle to... to... *sob*
@@ -772,6 +767,7 @@ Kristoph: Her testimony keeps changing. Now she says the defendant cheated.
 Apollo: Actually, yes! I had noticed that!
 Kristoph: Let's get the truth about this "cheating" first, shall we?
 Apollo: Right!  Leave it to me!
+Olga: >Mr. Smith's hand has three aces, and Mr. Wright's two. ...It is five aces in all.
 Apollo: *OBJECTION!*
 Apollo: It appears the witness is mistaken...
 Olga: Miss... Taken?  But my name...
@@ -1046,18 +1042,18 @@ Judge: When you're through being bad, perhaps you could testify to the court?
 Judge: Tell us about this "trap"... and how it was sprung.
 ** Witness Testimony **
 ** The Best Laid Traps **
-Olga: That night, I planted the card like I was supposed to.
-Olga: And Wright lost the last hand, just like he was supposed to. Then Smith searched him!
-Olga: But the planted card was gone! The trap failed.
-Olga: The next moment, Wright picked up a bottle and swung it!
-Olga: It wasn't me who hit Smith! It was that no-good, cheating defendant!
+Olga: >That night, I planted the card like I was supposed to.
+Olga: >And Wright lost the last hand, just like he was supposed to. Then Smith searched him!
+Olga: >But the planted card was gone! The trap failed.
+Olga: >The next moment, Wright picked up a bottle and swung it!
+Olga: >It wasn't me who hit Smith! It was that no-good, cheating defendant!
 Judge: Hmm... A surprisingly frank testimony that stil leaves us mostly in the dark.
-Olga: The trap was perfect I tell you, perfect!  If that rotten cheater hadn't messed it up.
+Olga: >The trap was perfect I tell you, perfect!  If that rotten cheater hadn't messed it up.
 Apollo: Look who's talking!
 Judge: Well, the testimony, for what it's worth, is all yours, Mr. Justice.
 ** Cross-Examination **
 ** The Best Laid Traps **
-Olga: That night, I planted the card like I was supposed to.
+Olga: >That night, I planted the card like I was supposed to.
 Apollo: *HOLD IT!*
 Apollo: This planted card... which card was it, exactly?
 Olga: The trump card... the Five of Hearts.
@@ -1070,7 +1066,7 @@ Olga: At the Borscht Bowl Club, we serve borscht... and suckers.
 Judge: Remind me never to go there.
 Olga: Of course, the card was to make its grand debut during the game...
 Olga: Like a good borscht, a good plot must be cooked up early and allowed to thicken.
-Olga: And Wright lost the last hand, just like he was supposed to. Then Smith searched him!
+Olga: >And Wright lost the last hand, just like he was supposed to. Then Smith searched him!
 Apollo: *HOLD IT!*
 Apollo: So, everything went according to plan...
 Olga: Exactly.
@@ -1079,7 +1075,7 @@ Olga: Once the extra card was found in his pocket...
 Olga: ...Wright would be forever known as a cheat and a fraud.
 Judge: There are worse things to be known as I suppose.
 Apollo: Tell us what happened with the search.
-Olga: But the planted card was gone! The trap failed.
+Olga: >But the planted card was gone! The trap failed.
 Apollo: *HOLD IT!*
 Apollo: The card... disappeared?
 Olga: Yeah!  My trump card, the Five of Hearts!
@@ -1091,7 +1087,7 @@ Olga: Never in my long, storied career...
 Olga: Never has "Quick-Fingers" Orly been so readily duped!
 Judge: Oh really. So, what did happen to that Five of Hearts?
 Olga: Don't look at me.  Why don't you ask that cheating, lying, two-faced defendant?
-Olga: The next moment, Wright picked up a bottle and swung it!
+Olga: >The next moment, Wright picked up a bottle and swung it!
 Apollo: *HOLD IT!*
 Apollo: Wait... Isn't that a little odd?
 Olga: Wh-What's odd!?
@@ -1163,14 +1159,14 @@ Apollo: You touched your neck again.
 Olga: Ack!
 Apollo: It's no use trying to hide it.  I can see right through you.
 Olga: ...
-Olga: It wasn't me who hit Smith! It was that no-good, cheating defendant!
+Olga: >It wasn't me who hit Smith! It was that no-good, cheating defendant!
 Apollo: *HOLD IT!*
 Apollo: Let me ask, how's your eyesight?
 Olga: Just who do you think you're talking to?
 Olga: They don't call me "Quick- Fingers" for nothing.
 Olga: I'm a pro.  Which means my dealing's pro, and my eyesight... is pro!
 Payne: Honestly, she'd have to be blind as a bat to miss something in that small room.
-Olga: He's the one who did it! I didn't let him out of my sight until the cops got there!
+Olga: >He's the one who did it! I didn't let him out of my sight until the cops got there!
 Apollo: *HOLD IT!*
 Apollo: You seem... uneasy.
 Olga: You try sitting up here!
@@ -1315,12 +1311,12 @@ Kristoph: ...
 Judge: Very well. The defendant... Mr. Wright will take the stand, please.
 ** Witness Testimony **
 ** Appetite Before Murder **
-Phoenix: That evening, Kristoph and I had dinner.  We sat at the table in the photograph.
-Phoenix: Shadi Smith walked in five minutes after Kristoph left.
-Phoenix: When the "trap" failed, Smith hit the waitress.
-Phoenix: The girl was knocked out cold, and Smith was uncontrollable. I left to call the police.
-Phoenix: When I returned, he was dead, blood streaming from a cut on his forehead.
-Phoenix: That's when I made another phone call... To Defense Attorney Gavin.
+Phoenix: >That evening, Kristoph and I had dinner.  We sat at the table in the photograph.
+Phoenix: >Shadi Smith walked in five minutes after Kristoph left.
+Phoenix: >When the "trap" failed, Smith hit the waitress.
+Phoenix: >The girl was knocked out cold, and Smith was uncontrollable. I left to call the police.
+Phoenix: >When I returned, he was dead, blood streaming from a cut on his forehead.
+Phoenix: >That's when I made another phone call... To Defense Attorney Gavin.
 Judge: Mr. Gavin!
 Judge: You were at the Borscht Bowl Club the night of the murder!?
 Phoenix: I dine with him rather frequently.
@@ -1340,7 +1336,7 @@ Kristoph: He's lying, and you're going to expose him.
 Apollo: Uh... Understood, sir.
 ** Cross-Examination **
 ** Appetite Before Murder **
-Phoenix: That evening, Kristoph and I had dinner.  We sat at the table in the photograph.
+Phoenix: >That evening, Kristoph and I had dinner.  We sat at the table in the photograph.
 Apollo: *HOLD IT!*
 Apollo: You had dinner with Mr. Gavin?
 Phoenix: Yes, he dines with me at the Borscht Bowl Club quite frequently.
@@ -1351,7 +1347,7 @@ Judge: I see... Where Mr. Smith was sitting!
 Payne: So, the plates and such on the table were from your dinner?
 Phoenix: ...Indeed.  The remnants of my meal with Kristoph.
 Phoenix: We dined for two hours, then Kristoph left.  After that...
-Phoenix: Shadi Smith walked in five minutes after Kristoph left.
+Phoenix: >Shadi Smith walked in five minutes after Kristoph left.
 Apollo: *HOLD IT!*
 Apollo: Five minutes?
 Apollo: So, the two of them could have passed in the restaurant during that time?
@@ -1366,7 +1362,7 @@ Payne: And now we hear they just passed in the hall?
 Judge: Hmm...
 Judge: That does seem a little weak as a pretense for murder.
 Phoenix: Oh it would be.  If that was all that really happened.
-Phoenix: When the "trap" failed, Smith hit the waitress.
+Phoenix: >When the "trap" failed, Smith hit the waitress.
 Apollo: *HOLD IT!*
 Apollo: About this failed "trap"...
 Apollo: This is the same "trap" that Ms. Olga Orly mentioned?
@@ -1393,14 +1389,14 @@ Judge: Hmm... A battle of wits between the deceiver and the would-be deceived!
 Judge: That sounds like terrific drama...
 Judge: Mr. Wright!  The "Poker Head of Courtroom No. 3" approves of this battle of wits!
 Judge: Please revise your testimony with this new information.
-Phoenix: I discovered the "trap" during the game, and disposed of the card in the bottle.
+Phoenix: >I discovered the "trap" during the game, and disposed of the card in the bottle.
 Apollo: *HOLD IT!*
 Apollo: Why in the bottle?
 Phoenix: I perceived my opponent's intent immediately.
 Phoenix: I'm used to entrapment, you see.  I knew what was coming.
 Judge: Hoh hoh... So you struck first!  I like that.
 Phoenix: I know every trick in the book.  They don't work on me.
-Phoenix: The girl was knocked out cold, and Smith was uncontrollable. I left to call the police.
+Phoenix: >The girl was knocked out cold, and Smith was uncontrollable. I left to call the police.
 Apollo: *HOLD IT!*
 Apollo: You made the call to the police from the first floor of the restaurant, correct?
 Phoenix: Exactly.  Cell phones don't get a signal down in the Hydeout.
@@ -1409,7 +1405,7 @@ Phoenix: Not a soul.  It was the middle of the night, after all.
 Phoenix: So there, in the darkened restaurant, I called the cops.
 Phoenix: After making the call, I returned to the Hydeout.
 Phoenix: It didn't seem right to leave the injured waitress alone.
-Phoenix: When I returned, he was dead, blood streaming from a cut on his forehead.
+Phoenix: >When I returned, he was dead, blood streaming from a cut on his forehead.
 Apollo: *HOLD IT!*
 Apollo: And when you returned, the victim was already...
 Phoenix: Dead, yes.
@@ -1452,7 +1448,7 @@ Judge: I'm afraid decisive contradictions call for decisive evidence.
 Apollo: Oh.
 Kristoph: Push him harder, Justice. Break him!
 Kristoph: It's just you and the witness in the ring.  Go for the KO!
-Phoenix: That's when I made another phone call... To Defense Attorney Gavin.
+Phoenix: >That's when I made another phone call... To Defense Attorney Gavin.
 Apollo: *HOLD IT!*
 Apollo: Could you explain why you called Mr. Gavin...?
 Phoenix: I'd obviously gotten involved in a rather... sticky affair.
@@ -1582,13 +1578,13 @@ Judge: Finally!  You may begin your testimony.
 Judge: Tell us... How were you involved in the events of that fateful night?
 ** Witness Testimony **
 ** That Fateful Night **
-Kristoph: The rage I sensed in that man that night troubled me... So I returned to the club.
-Kristoph: I went down to the basement and peeked in through the little window to the Hydeout.
-Kristoph: It must have been right after the murder took place.
-Kristoph: The victim was dead, as he appears in the photo.
-Kristoph: A bald head, an unconscious girl... and Wright, holding a bottle in his hand.
-Kristoph: I sensed that was not the best place for me to be at the time and so I left.
-Kristoph: That's when the call came from Wright.
+Kristoph: >The rage I sensed in that man that night troubled me... So I returned to the club.
+Kristoph: >I went down to the basement and peeked in through the little window to the Hydeout.
+Kristoph: >It must have been right after the murder took place.
+Kristoph: >The victim was dead, as he appears in the photo.
+Kristoph: >A bald head, an unconscious girl... and Wright, holding a bottle in his hand.
+Kristoph: >I sensed that was not the best place for me to be at the time and so I left.
+Kristoph: >That's when the call came from Wright.
 Payne: So... you witnessed the murder!?
 Kristoph: For better or worse, I missed the actual moment of the deed.
 Judge: Mr. Gavin, may I remind you that you are on Mr. Wright's defense team...
@@ -1608,7 +1604,7 @@ Judge: Mr. Justice, are you prepared?
 Apollo: Yes, Your Honor...
 ** Cross-Examination **
 ** That Fateful Night **
-Kristoph: The rage I sensed in that man that night troubled me... So I returned to the club.
+Kristoph: >The rage I sensed in that man that night troubled me... So I returned to the club.
 Apollo: *HOLD IT!*
 Apollo: "That man"... You mean Mr. Smith?
 Kristoph: He was different from the other customers... His aura, shall we say.
@@ -1618,7 +1614,7 @@ Kristoph: Of course.  But I also knew he wasn't engaged in gambling, which would
 Kristoph: Worried for my friend, I returned to the club.
 Kristoph: You see, I feared this Mr. Smith might be someone coming to settle an old score.
 Judge: I see.  What happened then?
-Kristoph: I went down to the basement and peeked in through the little window to the Hydeout.
+Kristoph: >I went down to the basement and peeked in through the little window to the Hydeout.
 Apollo: *HOLD IT!*
 Apollo: The little window...
 Apollo: You mean the one used to keep watch up the stairs?
@@ -1630,7 +1626,7 @@ Kristoph: I didn't want to upset Wright, you see.
 Apollo: Upset Mr. Wright?
 Kristoph: Yes.  What if my fears had been unfounded?
 Kristoph: I'd be walking in on their match!  Bad form, to say the least.
-Kristoph: It must have been right after the murder took place.
+Kristoph: >It must have been right after the murder took place.
 Apollo: *HOLD IT!*
 Apollo: How do you know it was "right after" the murder!?
 Kristoph: Really, no need to shout, Justice.
@@ -1640,13 +1636,13 @@ Phoenix: Ah, there he is!  The "Coolest Defense in the West" we know and love.
 Phoenix: Even when you're standing up there on the witness stand... Some things never change.
 Kristoph: I was afraid you'd changed, too, Wright, but you haven't.
 Kristoph: You and that overbearing personality of yours...
-Kristoph: The victim was dead, as he appears in the photo.
+Kristoph: >The victim was dead, as he appears in the photo.
 Apollo: *HOLD IT!*
 Apollo: By "photo" you mean the second photograph of the crime scene?
 Kristoph: Precisely.  You see, he wasn't wearing his hat then.
 Kristoph: I saw his head... when he was dead.
 Payne: Can you describe the scene of the crime for us?
-Kristoph: A bald head, an unconscious girl... and Wright, holding a bottle in his hand.
+Kristoph: >A bald head, an unconscious girl... and Wright, holding a bottle in his hand.
 Apollo: *HOLD IT!*
 Apollo: Those were the only three at the scene of the crime?
 Kristoph: Yes... As far as I saw, at least.
