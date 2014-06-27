@@ -53,7 +53,7 @@ func Execute(actions []Action) {
 }
 
 func playerExists(actor irc.Client) bool {
-	return (actor == nil)
+	return (actor != nil)
 }
 
 func play(actors map[string]*irc.Client, actions []Action, master string) {
