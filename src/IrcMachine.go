@@ -52,23 +52,23 @@ func Execute(actions []Action) {
 	}
 }
 
-func playerExists(actor irc.Client) bool {
-	return (actor != nil)
-}
-
 func play(actors map[string]*irc.Client, actions []Action, master string) {
 	var lastPerson string
 	for _, act := range actions {
 		switch act.Type {
 		case ACTION_MASTER, ACTION_JOIN:
-			if !playerExists(actors[act.Who]) { continue }
+			if _, ok := actors[act.Who]; !ok {
+				continue
+			}
 			actors[act.Who].Send(irc.Message{
 				Command: "JOIN",
 				Target:  CHANNEL,
 			})
 			time.Sleep(PAUSE / 4)
 		case ACTION_LEAVE:
-			if !playerExists(actors[act.Who]) { continue }
+			if _, ok := actors[act.Who]; !ok {
+				continue
+			}
 			actors[act.Who].Send(irc.Message{
 				Command: "PART",
 				Target:  CHANNEL,
@@ -76,15 +76,15 @@ func play(actors map[string]*irc.Client, actions []Action, master string) {
 			})
 			time.Sleep(PAUSE / 4)
 		case ACTION_SAY:
-			if !playerExists(actors[act.Who]) { 
-				act.What = act.Who+": "+act.What
-				act.Who = master 
+			if _, ok := actors[act.Who]; !ok {
+				act.What = act.Who + ": " + act.What
+				act.Who = master
 			}
 			if act.What[0] == '*' {
-				act.What = "\002"+act.What
+				act.What = "\002" + act.What
 			}
 			if act.What[0] == '>' {
-				act.What = "\0033"+act.What[1:]
+				act.What = "\0033" + act.What[1:]
 				time.Sleep(time.Second)
 			}
 			actors[act.Who].Send(irc.Message{
