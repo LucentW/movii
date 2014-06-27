@@ -52,17 +52,23 @@ func Execute(actions []Action) {
 	}
 }
 
+func playerExists(actor irc.Client) bool {
+	return (actor == nil)
+}
+
 func play(actors map[string]*irc.Client, actions []Action, master string) {
 	var lastPerson string
 	for _, act := range actions {
 		switch act.Type {
 		case ACTION_MASTER, ACTION_JOIN:
+			if !playerExists(actors[act.Who]) { continue }
 			actors[act.Who].Send(irc.Message{
 				Command: "JOIN",
 				Target:  CHANNEL,
 			})
 			time.Sleep(PAUSE / 4)
 		case ACTION_LEAVE:
+			if !playerExists(actors[act.Who]) { continue }
 			actors[act.Who].Send(irc.Message{
 				Command: "PART",
 				Target:  CHANNEL,
@@ -70,6 +76,10 @@ func play(actors map[string]*irc.Client, actions []Action, master string) {
 			})
 			time.Sleep(PAUSE / 4)
 		case ACTION_SAY:
+			if !playerExists(actors[act.Who]) { 
+				act.What = act.Who+": "+act.What
+				act.Who = master 
+			}
 			if act.What[0] == '*' {
 				act.What = "\002"+act.What
 			}
@@ -95,13 +105,14 @@ func play(actors map[string]*irc.Client, actions []Action, master string) {
 			actors[master].Send(irc.Message{
 				Command: "PRIVMSG",
 				Target:  CHANNEL,
-				Text:    "\001ACTION ** Court is now in recess for 5 minutes **\001",
+				Text:    "\001ACTION " + act.What + "\001",
 			})
 			time.Sleep(time.Minute * 4)
+		case ACTION_PLAY:
 			actors[master].Send(irc.Message{
 				Command: "PRIVMSG",
 				Target:  CHANNEL,
-				Text:    "\001ACTION ** Court will reconvene in a minute **\001",
+				Text:    "\001ACTION " + act.What + "\001",
 			})
 			time.Sleep(time.Minute)
 		case ACTION_EVENT:

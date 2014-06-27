@@ -982,7 +982,8 @@ Judge: Court is adjourned for a brief recess!
 Judge: Mr. Gavin, I'll see you in my chambers during this recess.
 Kristoph: ...Certainly, Your Honor.
 Judge: Very well!  The trial will resume in five minutes!
-PAUSE
+PAUSE ** Court is now in recess for 5 minutes **
+PLAY ** Court will reconvene in a minute **
 Judge: Court will now reconvene.
 Judge: Has our witness, Ms. Olga Orly, recovered?
 Payne: Y-Yes, Your Honor!  Er, well, she's regained consciousness.
@@ -1537,7 +1538,8 @@ Judge: After which Mr. Gavin will take the stand for a cross-examination!
 Judge: ...Are we all clear on that?
 Kristoph: Crystal clear, Your Honor.
 Judge: Very well!  This will be the final recess for the day.
-PAUSE
+PAUSE ** Court is now in recess for 5 minutes **
+PLAY ** Court will reconvene in a minute **
 Judge: Court will now reconvene.
 Judge: Defense Attorney Kristoph Gavin, will you please take the stand.
 Judge: Now then, if you would, Mr. Payne.
