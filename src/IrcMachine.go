@@ -28,7 +28,7 @@ func Execute(actions []Action) {
 		sinfo.Altnick = chars[i] + "`"
 		sinfo.Realname = chars[i]
 		sinfo.Channels = []string{}
-		sinfo.Perform = []string{}
+		sinfo.Perform = []string{"PRIVMSG NickServ :identify PASSWORDHERE\r\n"}
 		conn.ServerInfo = sinfo
 		conn.Sid = chars[i]
 		conn.ServerName = "Actor"
@@ -70,6 +70,13 @@ func play(actors map[string]*irc.Client, actions []Action, master string) {
 			})
 			time.Sleep(PAUSE / 4)
 		case ACTION_SAY:
+			if act.What[0] == '*' {
+				act.What = "\002"+act.What
+			}
+			if act.What[0] == '>' {
+				act.What = "\0033"+act.What[1:]
+				time.Sleep(time.Second)
+			}
 			actors[act.Who].Send(irc.Message{
 				Command: "PRIVMSG",
 				Target:  CHANNEL,
