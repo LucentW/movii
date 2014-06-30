@@ -13,7 +13,7 @@ const (
 	ACTION_LEAVE             = iota
 	ACTION_SAY               = iota
 	ACTION_PAUSE             = iota
-	ACTION_PLAY				 = iota
+	ACTION_PLAY              = iota
 	ACTION_EVENT             = iota
 	ACTION_NULL              = iota
 )
@@ -69,7 +69,7 @@ func ParseLine(line string) Action {
 		out.What = line[1:]
 		return out
 	}
-	
+
 	// PLAY
 	if line == "PLAY" {
 		out.Type = ACTION_PLAY
